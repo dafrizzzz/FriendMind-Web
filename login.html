@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FriendMind - Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <div class="logo">
+          <img
+            src="assets/img/LOGO FRIENDMIND.png"
+            width="250px"
+            alt="FriendMind Logo"
+          />
+        </div>
+
+        <h1>Selamat datang kembali</h1>
+        <p class="subtitle">Login untuk melanjutkan assesmentmu!</p>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan password"
+                required
+              />
+              <button
+                type="button"
+                id="togglePassword"
+                aria-label="Lihat password"
+              >
+                <img
+                  id="eyeIcon"
+                  src="https://img.icons8.com/ios-glyphs/20/9ca3af/visible.png"
+                  alt="toggle password"
+                />
+              </button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-signin"
+            onclick="window.location.href='starter.html'"
+          >
+            Sign In
+          </button>
+
+          <div class="links">
+            <p>Belum mempunyai akun? <a href="Daftar.html">Daftar</a></p>
+            <p>Apakah kamu admin? <a href="#">Admin Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>

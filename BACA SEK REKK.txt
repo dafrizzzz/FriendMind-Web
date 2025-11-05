@@ -1,0 +1,4 @@
+letakkan file css di "assets/css/...."
+termasuk file js . kecuali html diluar aja
+
+kalo kirim ke wa grup/drive pastikan di zip dulu ya :)
