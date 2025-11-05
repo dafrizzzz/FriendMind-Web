@@ -26,7 +26,7 @@ body {
 }
 
 .logo {
-  width: 45px;
+  width: 250px;
 }
 
 .green {
@@ -148,12 +148,6 @@ body {
 .btn:hover {
   background-color: #169a64;
 }
-
-
-.highlight {
-  border: 2px solid #1e90ff;
-}
-
 
 .history {
   background-color: white;
