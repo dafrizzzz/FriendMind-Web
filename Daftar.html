@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FriendMind - Buat Akun</title>
+  <link rel="stylesheet" href="assets/css/daftar.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind Logo" />
+      <h1><span class="green">Friend</span>Mind</h1>
+      <h2>Buat akun</h2>
+      <p class="subtitle">Ayo cari tahu jati dirimu!</p>
+    </div>
+
+    <form class="register-form">
+      <h3>Daftar</h3>
+      <p>Buat akun untuk memulai assessmentmu!</p>
+
+      <label for="name">Nama lengkap</label>
+      <input type="text" id="name" placeholder="Tulis nama lengkapmu disini..." required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Masukkan Email kamu disini..." required />
+
+      <label for="password">Kata sandi</label>
+      <input type="password" id="password" placeholder="Buat kata sandi kamu disini..." required />
+
+      <label for="confirm-password">Konfirmasi kata sandi</label>
+      <input type="password" id="confirm-password" placeholder="Konfirmasi kata sandi yang kamu buat disini..." required />
+
+      <div class="checkbox">
+        <input type="checkbox" id="agree" required />
+        <label for="agree">
+          Saya setuju dengan <a href="#">Terms of Services</a> dan <a href="#">Privacy Policy</a>
+        </label>
+      </div>
+
+      <a href="dashboard.html"><button type="submit">Buat akun</button></a>
+      <p class="login">Sudah mempunyai akun? <a href="#">Login!</a></p>
+    </form>
+  </div>
+</body>
+</html>
