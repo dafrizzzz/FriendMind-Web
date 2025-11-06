@@ -18,8 +18,9 @@ togglePassword.addEventListener("click", () => {
   );
 });
 
-// Simple form submission demo
-document.getElementById("loginForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Anda berhasil masuk di FriendMind!");
+// Tambahkan ini untuk alert setelah redirect
+window.addEventListener("load", () => {
+  if (typeof loginSuccess !== "undefined" && loginSuccess) {
+    alert("Anda berhasil masuk di FriendMind!");
+  }
 });

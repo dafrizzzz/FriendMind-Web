@@ -11,7 +11,7 @@
   
   <header class="navbar">
     <div class="logo-section">
-      <a href="starter.html">
+      <a href="starter.php">
         <img
           src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
           width="250px"
@@ -44,7 +44,7 @@
             <p>Mulai untuk mengetahui kondisi mental kamu saat ini!</p>
           </div>
         </div>
-        <a href="tesmental.html">
+        <a href="tesmental.php">
         <button class="btn">+ Mulai kuisioner!</button>
         </a>
       </div>
@@ -57,7 +57,7 @@
             <p>Cari tahu kepribadian kamu melalui tes ini!</p>
           </div>
         </div>
-        <a href="teskepribadian.html">
+        <a href="teskepribadian.php">
         <button class="btn">+ Mulai kuisioner!</button>
         </a>
       </div>

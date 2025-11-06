@@ -46,7 +46,7 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-      <a href="starter.html">
+      <a href="starter.php">
         <img
           src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
           width="250px"
@@ -61,15 +61,15 @@
         <nav id="navmenu" class="navmenu ms-auto">
           <ul>
             <li><a href="#about">Tentang</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="login.php">Login</a></li>
             <li class="dropdown">
               <a href="#"
                 ><span>Fitur</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="tesmental.html">Tes Kesehatan Mental</a></li>
-                <li><a href="teskepribadian.html">Tes Kepribadian</a></li>
+                <li><a href="tesmental.php">Tes Kesehatan Mental</a></li>
+                <li><a href="teskepribadian.php">Tes Kepribadian</a></li>
               </ul>
             </li>
             <li><a href="#contact">Kontak</a></li>
@@ -77,7 +77,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="dashboard.html">Ayo Mulai!</a>
+        <a class="btn-getstarted" href="dashboard.php">Ayo Mulai!</a>
       </div>
     </header>
 
@@ -112,7 +112,7 @@
                 Kesehatan Mental Itu Penting. Yuk, mulai dengan tes singkat
                 untuk memahami dirimu lebih baik.
               </p>
-              <a href="dashboard.html" class="btn-start">Mulai Tes</a>
+              <a href="dashboard.php" class="btn-start">Mulai Tes</a>
             </div>
           </div>
         </div>
@@ -316,7 +316,7 @@
                 <div class="icon">
                   <i class="bi bi-heart-pulse-fill"></i>
                 </div>
-                <a href="tesmental.html" class="stretched-link">
+                <a href="tesmental.php" class="stretched-link">
                   <h3>Tes Kesehatan Mental</h3>
                 </a>
                 <p> Tes Kesehatan Mental di Friendmind membantu kamu mengenali gejala-gejala 
@@ -335,7 +335,7 @@
                 <div class="icon">
                   <i class="bi bi-person-heart"></i>
                 </div>
-                <a href="teskepribadian.html" class="stretched-link">
+                <a href="teskepribadian.php" class="stretched-link">
                   <h3>Test Kepribadian</h3>
                 </a>
                 <p> Tes MBTI di Friendmind membantumu menemukan tipe kepribadian dari 16 profil berbeda, 
@@ -354,7 +354,7 @@
                 <div class="icon">
                   <i class="bi bi-telephone-outbound-fill"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
+                <a href="service-details.php" class="stretched-link">
                   <h3>Konsultasi Dokter Psikologis</h3>
                 </a>
                 <p>
@@ -373,13 +373,13 @@
                 <div class="icon">
                   <i class="bi bi-activity"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
+                <a href="service-details.php" class="stretched-link">
                   <h3>Tes Kecemasan</h3>
                 </a>
                 <p>
                   Segera Hadir
                 </p>
-                <a href="service-details.html" class="stretched-link"></a>
+                <a href="service-details.php" class="stretched-link"></a>
               </div>
             </div>
             <!-- End Service Item -->
@@ -596,7 +596,7 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
+            <a href="starter.php" class="d-flex align-items-center">
               <span class="sitename">FriendMind</span>
             </a>
             <div class="footer-contact pt-3">
