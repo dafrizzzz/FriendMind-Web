@@ -47,7 +47,7 @@ $loginSuccess = isset($_SESSION['login_success']) ? $_SESSION['login_success'] :
     <div class="login-container">
       <div class="login-card">
         <div class="logo">
-          <a href="starter.html">
+          <a href="starter.php">
         <img
           src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
           width="250px"

@@ -38,16 +38,9 @@
   <link rel="stylesheet" href="assets/css/daftar.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind Logo" />
-      <h1><span class="green">Friend</span>Mind</h1>
-      <h2>Buat akun</h2>
-      <p class="subtitle">Ayo cari tahu jati dirimu!</p>
-    </div>
 
     <form class="register-form" action="register.php" method="POST">
-      <h3>Daftar</h3>
+      <h3>Daftar Akun</h3>
       <p>Buat akun untuk memulai assessmentmu!</p>
       <h6 class="subtitle"><?= $register_messaage ?></h6>
 

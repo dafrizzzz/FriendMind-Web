@@ -1,3 +1,7 @@
+<?php
+$type = $_GET['type'] ?? 'Tidak diketahui';
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -70,35 +74,14 @@ function calculateMBTI() {
     resultType += (scores.J > scores.P) ? "J" : "P";
 
     // Arahkan ke halaman hasil tes (file yang sama seperti sebelumnya)
-    window.location.href = "hasilteskepribadian.html?type=" + resultType;
+    window.location.href = "hasilteskepribadian.php?type=" + resultType;
 }
 </script>
 
 
 <body class="index-page">
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-             <a href="dashboard.html">
-                 <img src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind" width="250px" class="logo d-flex align-items-center me-auto" />
-             </a>
-             <nav id="navmenu" class="navmenu ms-auto">
-                 <ul>
-                     <li><a href="index.html#about">Tentang</a></li>
-                     <li><a href="login.html">Login</a></li>
-                     <li class="dropdown">
-                         <a href="#"><span>Fitur</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                         <ul>
-                             <li><a href="tes-mental.html">Tes Kesehatan Mental</a></li>
-                             <li><a href="tesmental.html">Tes Kepribadian</a></li>
-                         </ul>
-                     </li>
-                     <li><a href="dashboard.html">Riwayat</a></li>
-                 </ul>
-                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-             </nav>
-             <a class="btn-getstarted" href="dashboard.html">Ayo Mulai!</a>
-        </div>
-    </header>
+    
+    <?php include 'includes/header.html'; ?>
 
     <main class="main">
         <section id="quiz" class="quiz-section">
@@ -294,11 +277,7 @@ function calculateMBTI() {
         </section>
         </main>
 
-    <footer id="footer" class="footer">
-        <div class="container copyright text-center mt-4">
-             <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">FriendMind Sejahtera</strong> <span>All Rights Reserved</span></p>
-         </div>
-    </footer>
+<?php include 'includes/footer.html'; ?>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>

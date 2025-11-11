@@ -39,47 +39,8 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <!-- ===================================================================== -->
-  </head>
-
-  <body class="index-page">
-    <header id="header" class="header d-flex align-items-center sticky-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center"
-      >
-      <a href="starter.php">
-        <img
-          src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
-          width="250px"
-          class="logo d-flex align-items-center me-auto"
-        />
-      </a href>
-
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename"></h1>
-
-        <nav id="navmenu" class="navmenu ms-auto">
-          <ul>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="login.php">Login</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Fitur</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li><a href="tesmental.php">Tes Kesehatan Mental</a></li>
-                <li><a href="teskepribadian.php">Tes Kepribadian</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Kontak</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-        <a class="btn-getstarted" href="dashboard.php">Ayo Mulai!</a>
-      </div>
-    </header>
+  
+    <?php include 'includes/header.html'; ?>
 
     <main class="main">
       <section id="hero" class="d-flex align-items-center">
@@ -103,7 +64,7 @@
               <span class="hero-label"
                 >Platform Tes Kesehatan Mental Mudah & Terpercaya</span
               >
-              <h1>
+              <h1 class="hero-text">
                 Kenali Dirimu, Apa Isi Hatimu<br /><span
                   >Semua dalam kendalimu</span
                 >
@@ -562,100 +523,7 @@
       <!-- /Contact Section -->
     </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-newsletter">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-6">
-              <h4>Yuk, Berlangganan FriendMind !</h4>
-              <p>
-                Setelah berlangganan dapatkan berita terbaru tentang produk dan layanan kami!
-              </p>
-              <form
-                action="forms/newsletter.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="newsletter-form">
-                  <input type="email" name="email" /><input
-                    type="submit"
-                    value="Subscribe"
-                  />
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Kamu telah berlangganan, Terimakasih !
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="starter.php" class="d-flex align-items-center">
-              <span class="sitename">FriendMind</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>Jalan Cinta Sejati No. 7, Kota Surabaya</p>
-              <p class="mt-3">
-                <strong>Phone:</strong> <span>+62 888 111 222 333</span>
-              </p>
-              <p><strong>Email:</strong> <span>friendmind@gmail.com/span></p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Kepoin yuk!</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Beranda</a></li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#about">Tentang</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#contact">Kontak</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Layanan</h4>
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Tes Kesehatan Mental</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Tes Kepribadian</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-12">
-            <h4>Ikuti kami di sosial media</h4>
-            <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>Copyright 2025</span>
-          <strong class="px-1 sitename">FriendMind Sejahtera</strong>
-          <span>All Rights Reserved</span>
-        </p>
-      </div>
-    </footer>
+  <?php include 'includes/footer.html'; ?>
 
     <!-- Scroll Top -->
     <a
