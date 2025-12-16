@@ -110,7 +110,7 @@
                     <div id="resultContent">
                         <!-- Hasil akan ditampilkan di sini -->
                     </div>
-                    <button class="btn-back" onclick="window.location.href='tesmental.html'">Kembali ke Tes</button>
+                    <button class="btn-back" onclick="window.location.href='dashboard.php'">Kembali ke Tes</button>
                     <p class="disclaimer">Tes ini hanya untuk tujuan informasi. Jika skor Anda tinggi, konsultasikan dengan ahli kesehatan mental. Ini bukan pengganti diagnosis profesional. FriendMind berkomitmen untuk privasi Anda.</p>
                 </div>
             </div>
@@ -150,11 +150,16 @@
         // Tampilkan hasil berdasarkan skor
         const score = parseInt(getQueryParam('score'));
         const resultContent = document.getElementById('resultContent');
+        const imgElement = document.getElementById('resultImage');
 
         if (score !== null && !isNaN(score)) {
             let message = '';
+            let image = '';
+
             if (score <= 9) {
                 message = 'Kondisi Anda tampak baik. Tetap jaga kesehatan mental Anda.';
+                image = 'img/resulttest1.png';
+
             } else if (score <= 19) {
                 message = 'Anda mungkin mengalami gejala ringan. Pertimbangkan untuk berbicara dengan seseorang.';
             } else if (score <= 24) {
@@ -167,6 +172,9 @@
                 <div class="result-score">${score}</div>
                 <div class="result-message">${message}</div>
             `;
+            imgElement.src = image; 
+            imgElement.style.display = 'block';
+
         } else {
             resultContent.innerHTML = '<p>Terjadi kesalahan dalam memuat hasil. Silakan ulangi tes.</p>';
         }

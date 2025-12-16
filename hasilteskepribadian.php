@@ -91,7 +91,7 @@
                 <div class="result-container">
                     <div id="resultContent">
                         </div>
-                    <button class="btn-back" onclick="window.location.href='teskepribadian.html'">Ulangi Tes</button>
+                    <button class="btn-back" onclick="window.location.href='dashboard.php'">Ulangi Tes</button>
                     <p class="disclaimer">Tipe kepribadian adalah alat bantu untuk memahami diri. </p>
                 </div>
             </div>
