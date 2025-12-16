@@ -39,6 +39,7 @@
 </head>
 <body>
 
+ <div class="container">
     <form class="register-form" action="register.php" method="POST">
       <h3>Daftar Akun</h3>
       <p>Buat akun untuk memulai assessmentmu!</p>
