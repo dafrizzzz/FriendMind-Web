@@ -50,13 +50,15 @@
         flex-grow: 1;
         padding: 20px;
       }
-      .content-panel {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-      }
+.content-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Hapus overflow: hidden jika tidak diperlukan, 
+     atau gunakan overflow-x: auto agar table bisa di-scroll di HP */
+  overflow-x: auto; 
+}
 
       /* Gaya spesifik untuk tabel dan tombol */
       .btn-add {
@@ -70,12 +72,12 @@
         text-decoration: none;
         display: inline-block;
       }
-      table {
-        width: 100%;
-        max-width: 950px;
-        border-collapse: collapse;
-        margin-top: 15px;
-      }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  /* Pastikan tidak ada max-width yang membatasi */
+}
       table th,
       table td {
         padding: 12px;
@@ -101,12 +103,30 @@
         background-color: #e74c3c;
         color: white;
       }
+
+            .logout-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #1cb87a;
+  color: white;
+  border: none;}
+
     </style>
   </head>
-   <?php include 'includes/header_admin.html'; ?>
+   <?php include '../includes/header_admin.php'; ?>
    <div class="wrapper">
   <body>
-    <?php include 'includes/sidebar_admin.php'; ?>
+    <?php include '../includes/sidebar_admin.php'; ?>
 
       <div class="main-content">
         <h1>Manajemen Kuisioner (Pilihan Ganda)</h1>

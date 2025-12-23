@@ -2,7 +2,7 @@
        <div class="logo-section">
       <a href="starter.php">
         <img
-          src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
+          src="../assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
           width="250px"
           class="logo d-flex align-items-center me-auto"
         />

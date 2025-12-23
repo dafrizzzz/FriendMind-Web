@@ -2,7 +2,7 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-      <a href="starter.php">
+      <a href="index.php">
         <img
           src="assets/img/LOGO FRIENDMIND.png" alt="FriendMind"
           width="250px"
@@ -16,8 +16,8 @@
 
         <nav id="navmenu" class="navmenu ms-auto">
           <ul>
-            <li><a href="starter.php #about">Tentang</a></li>
-            <li><a href="starter.php #contact">Kontak</a></li>
+            <li><a href="index.php #about">Tentang</a></li>
+            <li><a href="index.php #contact">Kontak</a></li>
             <li class="dropdown">
               <a href="#"
                 ><span>Fitur</span>
@@ -28,11 +28,11 @@
                 <li><a href="teskepribadian.php">Tes Kepribadian</a></li>
               </ul>
             </li>
-            <li><a href="dashboard.php">Akun</a></li>
+            <li><a href="user/dashboard.php">Akun</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="dashboard.php">Ayo Mulai!</a>
+        <a class="btn-getstarted" href="user/dashboard.php">Ayo Mulai!</a>
       </div>
     </header>

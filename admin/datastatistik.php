@@ -68,13 +68,30 @@
         flex: 1 1 15%;
         min-width: 15%;
       }
+
+            .logout-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #1cb87a;
+  color: white;
+  border: none; }
       
     </style>
   </head>
-  <?php include 'includes/header_admin.html'; ?>
+  <?php include '../includes/header_admin.php'; ?>
   <div class="wrapper">
   <body>
-    <?php include 'includes/sidebar_admin.php'; ?>
+    <?php include '../includes/sidebar_admin.php'; ?>
 
       <div class="main-content">
         <h1>Data Statistik Aktivitas Website</h1>
@@ -103,6 +120,6 @@
     </div>
     </div>
 
-    <script src="statistik.js"></script>
+    <script src="../assets/js/statistik.js"></script>
   </body>
 </html>

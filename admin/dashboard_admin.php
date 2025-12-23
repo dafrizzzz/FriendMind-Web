@@ -117,10 +117,10 @@
 }
     </style>
   </head>
-<?php include 'includes/header_admin.html'; ?>
+<?php include '../includes/header_admin.php'; ?>
 <div class="wrapper">
   <body>
-<?php include 'includes/sidebar_admin.php'; ?>
+<?php include '../includes/sidebar_admin.php'; ?>
 
       <div class="main-content">
         <hr />
