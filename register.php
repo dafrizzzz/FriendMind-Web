@@ -1,5 +1,5 @@
 <?php
-      include "service/database.php";
+      include "config/database.php";
 
       $register_messaage = "";
 

@@ -31,79 +31,8 @@
 
 
     <!-- Custom CSS for Quiz -->
-    <style>
-        .quiz-section {
-            padding: 60px 0;
-            background-color: #f8f9fa;
-        }
-        .quiz-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .question {
-            margin-bottom: 30px;
-        }
-        .question h4 {
-            margin-bottom: 15px;
-            color: #333;
-            font-weight: 600;
-        }
-        .options label {
-            display: block;
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .options label:hover {
-            background-color: #f0f0f0;
-        }
-        .options input[type="radio"] {
-            margin-right: 10px;
-        }
-        .btn-calculate {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-        }
-        .btn-calculate:hover {
-            background-color: #0056b3;
-        }
-        #result {
-            margin-top: 30px;
-            padding: 20px;
-            border-radius: 5px;
-            display: none;
-        }
-        .disclaimer {
-            font-size: 0.9em;
-            color: #666;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .hero-label {
-            display: inline-block;
-            background-color: #d5f5e3;
-            color: #10bc69;
-            font-weight: 600;
-            font-size: 14px;
-            padding: 6px 14px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
+<link href="../assets/css/tes.css" rel="stylesheet" />
+
 
 <script>
 function calculateScore() {
@@ -122,14 +51,14 @@ function calculateScore() {
     }
 
     // Arahkan ke halaman hasil tes dengan membawa skor sebagai parameter URL
-    window.location.href = "hasiltesmental.php?score=" + totalScore;
+    window.location.href = "../forms/hasiltesmental.php?score=" + totalScore;
 }
 </script>
 
 
 <body class="index-page">
 
-  <?php include __DIR__ . '/../includes/header_user.php'; ?>
+  <?php include __DIR__ . '/../includes/header_quiz.php'; ?>
 
     <main class="main">
         <!-- Quiz Section -->
@@ -256,7 +185,7 @@ function calculateScore() {
         <!-- /Quiz Section -->
     </main>
 
- <?php include __DIR__ . '/../includes/footer.php'; ?>
+    <?php include __DIR__ . '/../includes/footer.php'; ?>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
